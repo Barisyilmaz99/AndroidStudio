@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btn_sabah"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:onClick="play_sabah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sabah" />
+
+    <ImageButton
+        android:id="@+id/btn_oglen"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:onClick="play_oglen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oglen" />
+
+    <ImageButton
+        android:id="@+id/btn_ikindi"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:onClick="play_ikindi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sabah"
+        app:srcCompat="@drawable/ikindi" />
+
+    <ImageButton
+        android:id="@+id/btn_aksam"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:onClick="play_aksam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_oglen"
+        app:srcCompat="@drawable/aksam" />
+
+    <ImageButton
+        android:id="@+id/btn_yatsi"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:onClick="play_yatsi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ikindi"
+        app:srcCompat="@drawable/yatsi" />
+
+    <ImageButton
+        android:id="@+id/btn_stop"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:onClick="stop_playing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aksam"
+        app:srcCompat="@android:drawable/ic_media_pause" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="65dp"
+        android:text="EZAN PLAYER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
